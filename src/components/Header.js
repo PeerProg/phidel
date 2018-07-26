@@ -34,8 +34,8 @@ class Header extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  About Us
+                <DropdownToggle style={{ fontFamily: 'Titillium Web', color: 'black'}} nav caret>
+                   About Us
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
