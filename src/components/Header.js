@@ -8,7 +8,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem
+} from 'reactstrap';
 import logo from '../img/logo.jpg';
 
 class Header extends Component {
@@ -27,15 +28,15 @@ class Header extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
+      <div style={{ fontFamily: 'Montserrat' }}>
+        <Navbar style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem', paddingTop: 0, paddingBottom: 0 }} light expand="md">
           <NavbarBrand href="/"><img alt="logo" src={logo} width="70" height="74" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ fontFamily: 'Titillium Web', color: 'black'}} nav caret>
-                   About Us
+                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
+                  About Us
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
@@ -51,7 +52,7 @@ class Header extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
                   Academics
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -68,7 +69,7 @@ class Header extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
                   School Life
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -85,7 +86,7 @@ class Header extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
+                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
                   News
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -102,7 +103,7 @@ class Header extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
                   Calendar
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -119,7 +120,7 @@ class Header extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
                   Contact
                 </DropdownToggle>
                 <DropdownMenu right>
