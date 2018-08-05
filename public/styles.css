@@ -1,0 +1,127 @@
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #8064A2;
+    border-color: #8064A2;
+}
+.navbar {
+  padding: 0;
+}
+p {
+  font-family: 'Montserrat';
+}
+.container {
+  margin-right: 0
+}
+.iconText {
+  font-size: 11px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+.styledhr {
+  border: 0.5px solid lightgray;
+  width: 80%;
+  float: right;
+  margin-top: -20px;
+}
+.pad-button {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.dropdown {
+  color: black;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.border-img {
+  border: 1px solid black;
+}
+.slides {
+  position: relative;
+}
+.slides .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 1;
+}
+.slider-styles {
+  width: 100%;
+  margin-top: 40px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 1;
+}
+.caption{
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.8;
+  width: 30%;
+  height: 30%;
+}
+.side-div{
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  padding: 5px;
+  opacity: 0.9;
+  background-color: #e6be1e;
+  width: 15px;
+  height: 30%;
+}
+.relative {
+  position: relative;
+}
+.logo {
+  width: 80px;
+  height: 81px;
+}
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) {
+  .slider-text {font-size: 8px;}
+  .caption {
+    height: 60%;
+    opacity: 0.8;
+    width: 45%;
+  }
+  .side-div {
+    height: 60%;
+    opacity: 0.8;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .styledhr {
+    margin-top: -10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .slider-text {font-size: 12px;}
+  .dropdown {
+    margin-right: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .slider-text {font-size: 14px;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .slider-text {font-size: 16px;}
+}
