@@ -10,7 +10,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
-import logo from '../img/logo.jpg';
+import Images from '../assets/images';
 
 class Header extends Component {
 
@@ -30,7 +30,7 @@ class Header extends Component {
     return (
       <div style={{ fontFamily: 'Montserrat' }}>
         <Navbar style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem', paddingTop: 0, paddingBottom: 0 }} light expand="md">
-          <NavbarBrand href="/"><img alt="logo" src={logo} width="70" height="74" /></NavbarBrand>
+          <NavbarBrand href="/"><img alt="logo" src={Images.logo} className="logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
