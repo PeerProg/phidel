@@ -27,6 +27,10 @@ p {
   float: right;
   margin-top: -20px;
 }
+.pad-button {
+  padding-right: 10%;
+  padding-left: 10%;
+}
 .dropdown {
   color: black;
   font-size: 12px;
@@ -43,6 +47,12 @@ p {
   top: 50%;
   left: 5%;
   z-index: 1;
+}
+.slider-styles {
+  width: 100%;
+  margin-top: 40px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 .slides .slick-next {
   position: absolute;
