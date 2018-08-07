@@ -30,7 +30,12 @@ class Header extends Component {
     return (
       <div style={{ fontFamily: 'Montserrat' }}>
         <Navbar style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem', paddingTop: 0, paddingBottom: 0 }} light expand="md">
-          <NavbarBrand href="/"><img alt="logo" src={Images.logo} className="logo" /></NavbarBrand>
+          <NavbarBrand className="brand" href="/">
+          <div style={{ display: 'flex', flexDirection: 'row'}}>
+            <img alt="logo" src={Images.logo} className="logo" />
+            <p className="brands">PHIDEL SCHOOLS</p>
+          </div>
+            </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
