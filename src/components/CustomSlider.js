@@ -6,7 +6,7 @@ class CustomSlider extends Component {
   render() {
     const settings = {
       arrows: true,
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 700,
       slidesToShow: 1,
