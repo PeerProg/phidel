@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Col } from "reactstrap";
+import { EventCard } from '.';
 
-export default class EventsSection extends Component {
+class EventsSection extends Component {
   render() {
     return (
       <Col xs="12" md="6" lg="3" className="no-padding">
@@ -11,44 +12,30 @@ export default class EventsSection extends Component {
             {" "}
             See our calendar for upcoming events in 2018. Ensure to check this.
           </p>
-          <div className="flexify">
-            <div className="event-date">
-              <p className="month">AUG</p>
-              <p className="date">11</p>
-            </div>
-            <div className="content">
-              <p className="event-text">Open Day</p>
-            </div>
-          </div>
-          <div className="flexify">
-            <div className="event-date">
-              <p className="month">AUG</p>
-              <p className="date">22</p>
-            </div>
-            <div className="content">
-              <p className="event-text">PTA Meeting</p>
-            </div>
-          </div>
-          <div className="flexify">
-            <div className="event-date">
-              <p className="month">AUG</p>
-              <p className="date">11</p>
-            </div>
-            <div className="content">
-              <p className="event-text">Board Meeting</p>
-            </div>
-          </div>
-          <div className="flexify">
-            <div className="event-date">
-              <p className="month">AUG</p>
-              <p className="date">11</p>
-            </div>
-            <div className="content">
-              <p className="event-text">End of term</p>
-            </div>
-          </div>
+          <EventCard
+            eventMonth="AUG"
+            eventDay="11"
+            eventName="Open Day"
+          />
+          <EventCard
+            eventMonth="AUG"
+            eventDay="22"
+            eventName="PTA Meeting"
+          />
+          <EventCard
+            eventMonth="AUG"
+            eventDay="11"
+            eventName="Board Meeting"
+          />
+          <EventCard
+            eventMonth="AUG"
+            eventDay="11"
+            eventName="End of term"
+          />
         </div>
       </Col>
     );
   }
 }
+
+export default EventsSection;
