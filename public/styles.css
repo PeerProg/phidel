@@ -6,11 +6,14 @@
     background-color: #8064A2;
     border-color: #8064A2;
 }
+
+/* navbar styles */
 .navbar {
   padding: 0;
 }
 p {
   font-family: 'Montserrat';
+  margin-bottom: 0;
 }
 .container {
   margin-right: 0
@@ -37,7 +40,7 @@ p {
   margin-right: 20px;
 }
 .border-img {
-  border: 1px solid black;
+  border: 0.5px solid grey;
 }
 .slides {
   position: relative;
@@ -84,8 +87,149 @@ p {
   position: relative;
 }
 .logo {
-  width: 80px;
-  height: 81px;
+  width: 90px;
+  height: 91px;
+  margin-left: 30px;
+  margin-top: 10px
+}
+.brands {
+  color: #8b4547;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: 'Montserrat';
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.card-pad {
+  margin-top: 36px;
+}
+
+/* bottom brand styles */
+.black-bg {
+  height: 200px;
+  background-color: #333436;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  text-align: justify;
+}
+.yellow-bg {
+  height: 200px;
+  padding: 30px;
+  background-color: #e6be1e;
+}
+.extend {
+  background-color: #ededed;
+  padding: 30px;
+}
+.events {
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Montserrat';
+}
+.no-padding {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.top-margin {
+  /* margin-top: 25px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.discover {
+  font-size: 40px;
+  color: white;
+  padding-top: 5px;
+  padding-left: 10%;
+  padding-right: 25px;
+  /* padding-bottom: 25px; */
+  font-weight: 600;
+}
+.discover p {
+  margin-bottom: 0px !important;
+}
+.phidel {
+  padding-top: 0px;
+}
+.undertext {
+  font-size: 15px;
+  color: white;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 300;
+}
+.arrow {
+  margin-right: 20px;
+  color: 'white';
+  font-size: 50;
+  margin-top: '20px';
+}
+.small-bg {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: #c847ca;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.yellow-gb {
+  background-color: #e6be1e;
+}
+.green-bg {
+  background-color: #3a71b9;
+
+}
+.ban-text {
+  color: white;
+  font-weight: 300;
+  font-size: 6;
+  margin-left: 15px;
+}
+.award {
+  font-weight: 400;
+}
+
+/* event styles */
+.event-date{
+  width: 22%;
+  height: 65px;
+  background-color: #7596dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 78%;
+  height: 65px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+.event-text {
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+.month {
+  color: white;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+.date {
+  color: white;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.flexify {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
 }
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 544px) {
@@ -106,6 +250,16 @@ p {
   .styledhr {
     margin-top: -10px;
   }
+  .brands {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .logo {
+    margin-left: 5px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -114,14 +268,69 @@ p {
   .dropdown {
     margin-right: 10px;
   }
+    .discover {
+      font-size: 25px;
+      padding-right: 10px;
+    }
+    .arrow {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    .brands {
+      font-weight: 700;
+      font-size: 17px;
+      font-family: 'Montserrat';
+      margin-top: 20px;
+      margin-left: 15px;
+    }
+    .logo {
+      margin-left: 0px;
+      width: 70px;
+      height: 71px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .slider-text {font-size: 14px;}
+  .discover {
+    font-size: 30px;
+  }
+  .arrow {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  .logo {
+    width: 90px;
+    height: 91px;
+    margin-left: 30px;
+    margin-top: 10px
+  }
+  .brands {
+    color: #8b4547;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Montserrat';
+    margin-top: 25px;
+    margin-left: 15px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .slider-text {font-size: 16px;}
+  .logo {
+    width: 90px;
+    height: 91px;
+    margin-left: 30px;
+    margin-top: 10px
+  }
+  .brands {
+    color: #8b4547;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    margin-top: 20px;
+    margin-left: 15px;
+  }
 }
