@@ -13,7 +13,7 @@ class Footer extends Component {
           <Col xs="12" md="6" lg="3" className="footer-div">
             <p className="footer-label">ABOUT THE SCHOOL</p>
             <p className="about">
-              Phidel Schools was established in 2016 to develop students to become next generation of world leaders through invaluable academic and moral education.The College is situated at Isheri, Idimu, Lagos State of Nigeria. The College is a coeducational Secondary School that prepares students to excel through individual skills and teamwork with educational moral, religious and social standard
+              Phidel Schools was established in 2016 to develop students to become next generation of world leaders through invaluable academic and moral education.The College is a coeducational Secondary School that prepares students to excel through individual skills and teamwork with educational moral, religious and social standard
             </p>
           </Col>
           <Col xs="12" md="6" lg="3" className="footer-div">

@@ -9,7 +9,7 @@ export default class EventsSection extends Component {
           <p className="events">Events</p>
           <p>
             {" "}
-            See our calendar for upcoming events in 2018. Ensure to check this.
+            See our events.
           </p>
           <div className="flexify">
             <div className="event-date">
