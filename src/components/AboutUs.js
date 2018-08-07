@@ -1,12 +1,4 @@
 import React, { Component, Fragment } from "react";
-import {
-  Col,
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardText
-} from "reactstrap";
 import Images from '../assets/images';
 import AboutUsCard from "./AboutUsCard";
 import description from "../util/text";
