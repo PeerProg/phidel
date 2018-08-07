@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Slider from "react-slick";
-import Images from '../assets/images';
 import { Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneSquare, faMapMarkerAlt, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
@@ -33,7 +31,14 @@ class Footer extends Component {
           </Col>
           <Col xs="12" md="6" lg="3" className="footer-div">
             <p className="footer-label"> VISIT US</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d7652.563264121312!2d3.2804623638419317!3d6.584010696446976!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.591408899999999!2d3.2840749999999996!4m5!1s0x103b9040b372f9c5%3A0x616ae8a0b13c2ec4!2sphidel+school+lagos+nigeria!3m2!1d6.589884!2d3.2833883!5e0!3m2!1sen!2sng!4v1533649779920" width="300" height="200" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
+            <iframe
+              title="map"
+              src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d7652.563264121312!2d3.2804623638419317!3d6.584010696446976!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.591408899999999!2d3.2840749999999996!4m5!1s0x103b9040b372f9c5%3A0x616ae8a0b13c2ec4!2sphidel+school+lagos+nigeria!3m2!1d6.589884!2d3.2833883!5e0!3m2!1sen!2sng!4v1533649779920"
+              width="300"
+              height="200"
+              frameBorder="0"
+              style={{ border: 0 }}
+              allowFullScreen />
           </Col>
           <Col xs="12" md="6" lg="3" className="footer-black">
             <p className="contact-us">CONTACT US</p>
