@@ -7,6 +7,7 @@ const images = {
   ban6: require('./img/6.jpg'),
   ban7: require('./img/7.jpg'),
   logo: require('./img/logo.jpg'),
+  aa: require('./img/aa.jpg'),
 };
 
 
