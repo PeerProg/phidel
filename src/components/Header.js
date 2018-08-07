@@ -5,12 +5,9 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
 } from 'reactstrap';
 import Images from '../assets/images';
+import { HeaderDropdown } from '.';
 
 class Header extends Component {
 
@@ -19,7 +16,7 @@ class Header extends Component {
     dropdownOpen: false
   };
 
-  toggle = () => {
+  toggleDropdown = () => {
     this.setState({
       isOpen: !this.state.isOpen,
       dropdownOpen: !this.state.dropdownOpen
@@ -27,6 +24,11 @@ class Header extends Component {
   }
 
   render() {
+    const {
+      toggleDropdown,
+      state: { isOpen },
+    } = this;
+
     return (
       <div style={{ fontFamily: 'Montserrat' }}>
         <Navbar style={{ paddingLeft: '0.5rem', paddingRight: '0.5rem', paddingTop: 0, paddingBottom: 0 }} light expand="md">
@@ -35,112 +37,16 @@ class Header extends Component {
             <img alt="logo" src={Images.logo} className="logo" />
             <p className="brands">PHIDEL SCHOOLS</p>
           </div>
-            </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          </NavbarBrand>
+          <NavbarToggler onClick={toggleDropdown} />
+          <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
-                  About Us
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
-                  Academics
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
-                  School Life
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
-                  News
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
-                  Calendar
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle style={{ color: 'black' }} className="dropdown" nav caret>
-                  Contact
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <HeaderDropdown headerItemName="About us" />
+              <HeaderDropdown headerItemName="Academics" />
+              <HeaderDropdown headerItemName="School Life" />
+              <HeaderDropdown headerItemName="News" />
+              <HeaderDropdown headerItemName="Calendar" />
+              <HeaderDropdown headerItemName="Contact" />
             </Nav>
           </Collapse>
         </Navbar>
