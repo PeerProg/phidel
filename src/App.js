@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { Header, Slider } from './components';
+import { Header, Slider, EventsSection, AboutUs } from './components';
 import {
   Button
 } from 'reactstrap';
 import Facebook from './components/Facebook';
-import { Row, Col, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faStroopwafel, faArrowAltCircleRight, faTrophy, faTasks, faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Images from './assets/images';
 
 library.add(fab, faStroopwafel, faArrowAltCircleRight);
 class App extends Component {
@@ -90,75 +89,8 @@ class App extends Component {
             </Col>
           </Row>
           <Row style={{ marginRight: '0px', marginLeft: '0px' }}>
-            <Col xs="12" md="6" lg="3" className="card-pad">
-              <Card>
-                <CardImg top width="100%" src={Images.ban2} alt="Card image cap" />
-                <CardBody>
-                  <CardTitle>Our Classroom</CardTitle>
-                  <CardText >Our classrooms are very convienient to use and reuseable. They make our students feel extremely comfortabe and happy to join us in the classrooms. We ensure we provide high-quality desk and chairs. The sight of our classroom is amazing and looks beautiful, spacious and very airy.</CardText>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs="12" md="6" lg="3" className="card-pad">
-              <Card>
-                <CardImg top width="100%" src={Images.ban5} alt="Card image cap" />
-                <CardBody>
-                  <CardTitle>Our Teachers</CardTitle>
-                  <CardText>Our teachers are highky trained individuals who specialize in taking carre of our pupils wiht ulmost attention, meeting their every day needs. We select top-notch teachers who deliver our students in the best manner possible pereparing them to be the future leaders of tomorrow.</CardText>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs="12" md="6" lg="3" className="card-pad">
-              <Card >
-                <CardImg top width="100%" src={Images.ban1} alt="Card image cap" />
-                <CardBody>
-                  <CardTitle>Our students</CardTitle>
-                  <CardText>We breed impeccable students. Our students are respectful, well-trained individuals whop stand out among their peers in all facrts of life. We pay attention to the quality of students we have ensuring that thwy are prepared for challenges that lay ahead of them.We believe in them wholly</CardText>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs="12" md="6" lg="3" className="no-padding">
-              <div className="extend">
-                <p className="events">Events</p>
-                <p> See our calendar for upcoming events in 2018. Ensure to check this.</p>
-                <div className="flexify">
-                  <div className="event-date">
-                    <p className="month">AUG</p>
-                    <p className="date">11</p>
-                  </div>
-                  <div className="content">
-                    <p className="event-text">Open Day</p>
-                  </div>
-                </div>
-                <div className="flexify">
-                  <div className="event-date">
-                    <p className="month">AUG</p>
-                    <p className="date">22</p>
-                  </div>
-                  <div className="content">
-                    <p className="event-text">PTA Meeting</p>
-                  </div>
-                </div>
-                <div className="flexify">
-                  <div className="event-date">
-                    <p className="month">AUG</p>
-                    <p className="date">11</p>
-                  </div>
-                  <div className="content">
-                    <p className="event-text">Board Meeting</p>
-                  </div>
-                </div>
-                <div className="flexify">
-                  <div className="event-date">
-                    <p className="month">AUG</p>
-                    <p className="date">11</p>
-                  </div>
-                  <div className="content">
-                    <p className="event-text">End of term</p>
-                  </div>
-                </div>
-              </div>
-            </Col>
+            <AboutUs />
+            <EventsSection />
           </Row>
         </div>
       </div>
