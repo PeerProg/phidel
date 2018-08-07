@@ -231,6 +231,80 @@ p {
   flex-direction: row;
   margin-top: 15px;
 }
+
+/* footer styles*/
+
+.footer-div {
+  background-color: #ededed;
+  height: 300px;
+  width: 100%;
+  border: 1px solid whitesmoke;
+  padding: 30px;
+}
+.footer-black {
+ background-color: #333436;
+  height: 300px;
+  width: 100%;
+  padding: 30px;
+}
+.footer-label {
+  font-weight: 700;
+}
+.contact-us {
+  font-weight: 700;
+  color: white;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+  border-bottom: 0.5px dashed #a7aeba;
+}
+.contact-wb{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+}
+.contact p {
+  color: white;
+}
+.contact-wb p{
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+.work-hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+  border-bottom: 0.5px dashed #a7aeba;
+}
+.holidays {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+}
+.contact-text {
+  font-size: 13px;
+
+}
+.about {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.footer-contact {
+  display: flex;
+  width: 60px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 544px) {
   .slider-text {font-size: 8px;}
