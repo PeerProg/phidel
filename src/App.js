@@ -76,7 +76,7 @@ class App extends Component {
             </Col>
             <Col xs="12" sm="12" md="6" lg="3" className="no-padding">
               <div className="yellow-bg">
-                <p className="undertext">Don't hesitate to ask us</p>
+                <p className="undertext">Do not hesitate to ask us</p>
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                   <div>
                     <p className="discover">Discover Phidel</p>
