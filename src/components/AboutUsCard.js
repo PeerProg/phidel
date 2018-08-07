@@ -21,11 +21,11 @@ class AboutUsCard extends Component {
 
     return (
       <Col xs="12" md="6" lg="3" className="card-pad">
-        <Card>
+        <Card style={{ height: '420px', width: '90%', marginLeft: '5%'}}>
           <CardImg top width="100%" src={image} alt="Card image cap" />
           <CardBody>
             <CardTitle>{title}</CardTitle>
-            <CardText>{description}</CardText>
+            <CardText style={{ fontSize: '13px', lineHeight: 2}}>{description}</CardText>
           </CardBody>
         </Card>
       </Col>

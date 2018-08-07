@@ -10,7 +10,7 @@ class EventsSection extends Component {
           <p className="events">Events</p>
           <p>
             {" "}
-            See our calendar for upcoming events in 2018. Ensure to check this.
+            See our events.
           </p>
           <EventCard
             eventMonth="AUG"
