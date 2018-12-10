@@ -9,4 +9,5 @@ export { default as AboutUs } from './AboutUs';
 export { default as FeatureCard } from './FeatureCard';
 export { default as Features } from './Features';
 export { default as HomePage } from './HomePage';
+export { default as PhGallery } from './PhGallery';
 
