@@ -6,7 +6,7 @@ import { faPhoneSquare, faMapMarkerAlt, faEnvelopeSquare } from '@fortawesome/fr
 class Footer extends Component {
   render() {
     return (
-      <div>
+      <div id="contact-us">
         <Row style={{ marginRight: '0px', marginLeft: '0px', marginTop: '50px', height: '150px' }}>
           <Col xs="12" md="6" lg="3" className="footer-div">
             <p className="footer-label">ABOUT THE SCHOOL</p>
